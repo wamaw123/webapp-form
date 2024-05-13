@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Page Iframe</title>
     <style>
-        html, body {
-            height: 100%;
-            width: 100%;
+        * {
             margin: 0;
             padding: 0;
+            border: 0;
+        }
+        html, body {
+            width: 100vw;
+            height: 100vh;
             overflow: hidden; /* Hide scrollbars */
             display: block;
+            position: relative;
         }
         iframe {
-            position: absolute; /* Positioning the iframe absolutely to cover the whole page */
+            position: fixed; /* This can help ensure it covers the full screen */
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
+            width: 100vw;
+            height: 100vh;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=zIQcx992JUuXJrS-Kx8FeSRR1sf50i9Pnd9fkQUJwLVUMUtIS1NQM0JHRzczUUZBS0RHOTVCVkVNNi4u&embed=true" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
-</body>
-</html>
+    <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=zIQcx992JUuXJrS-Kx8FeSRR1sf50i9Pnd9fkQUJwLVUMUtIS1NQM0JHRzczUUZBS0RHOTVCVkVNNi4u&embed=true" allowfullscreen

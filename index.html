@@ -3,28 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Page Iframe</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-        }
-        html, body {
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden; /* Hide scrollbars */
-            display: block;
-            position: relative;
-        }
-        iframe {
-            position: fixed; /* This can help ensure it covers the full screen */
-            top: 0;
-            left: 0;
-            width: 200vw;
-            height: 200vh;
-        }
-    </style>
+    <title>Full Screen Iframe</title>
 </head>
-<body>
-    <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=zIQcx992JUuXJrS-Kx8FeSRR1sf50i9Pnd9fkQUJwLVUMUtIS1NQM0JHRzczUUZBS0RHOTVCVkVNNi4u&embed=true" allowfullscreen
+<body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0;">
+    <iframe 
+        src="https://forms.office.com/Pages/ResponsePage.aspx?id=zIQcx992JUuXJrS-Kx8FeSRR1sf50i9Pnd9fkQUJwLVUMUtIS1NQM0JHRzczUUZBS0RHOTVCVkVNNi4u&embed=true" 
+        frameborder="0" 
+        style="border: none; width: 100vw; height: 100vh;" 
+        allowfullscreen 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        msallowfullscreen>
+    </iframe>
+</body>
+</html>
